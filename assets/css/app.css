@@ -7,7 +7,13 @@ Contact: support@themesbrand.com
 File: Main Css File
 */
 
-/* @import url(https://fonts.googleapis.com/css2?family=raleway:wght@300;400;500;600;700&display=swap); */
+
+@font-face {
+	font-family: raleway;
+	src: url(../fonts/raleway-thin.eot);
+	src: local("raleway thin"),url(../fonts/raleway-thin.ttf) format("ttf");
+	font-weight: 100;
+}
 
 @font-face {
 	font-family: raleway;
@@ -17,32 +23,76 @@ File: Main Css File
 }
 
 @font-face {
-	font-family:raleway;
-	src:url(../fonts/raleway-regular.eot);
-	src:local("raleway regular"),url(../fonts/raleway-regular.ttf) format("ttf");
-	font-weight:400;
+	font-family: raleway;
+	src: url(../fonts/raleway-regular.eot);
+	src: local("raleway regular"),url(../fonts/raleway-regular.ttf) format("ttf");
+	font-weight: 400;
 }
 
 @font-face {
-	font-family:raleway;
-	src:url(../fonts/raleway-medium.eot);
-	src:local("raleway medium"),url(../fonts/raleway-medium.ttf) format("ttf");
-	font-weight:500;
+	font-family: raleway;
+	src: url(../fonts/raleway-medium.eot);
+	src: local("raleway medium"),url(../fonts/raleway-medium.ttf) format("ttf");
+	font-weight: 500;
 }
 
 @font-face {
-	font-family:raleway;
-	src:url(../fonts/raleway-semibold.eot);
-	src:local("raleway semibold"),url(../fonts/raleway-semibold.ttf) format("ttf");
-	font-weight:600;
+	font-family: raleway;
+	src: url(../fonts/raleway-black.eot);
+	src: local("raleway black"),url(../fonts/raleway-black.ttf) format("ttf");
+	font-weight: 600;
 }
 
 @font-face {
-	font-family:raleway;
-	src:url(../fonts/raleway-bold.eot);
-	src:local("raleway bold"),url(../fonts/raleway-bold.ttf) format("ttf");
-	font-weight:700;
+	font-family: raleway;
+	src: url(../fonts/raleway-bold.eot);
+	src: local("raleway bold"),url(../fonts/raleway-bold.ttf) format("ttf");
+	font-weight: 700;
 }
+
+@font-face {
+	font-family: roboto;
+	src: url(../fonts/roboto-thin.eot);
+	src: local("roboto thin"),url(../fonts/roboto-thin.ttf) format("ttf");
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: roboto;
+	src: url(../fonts/roboto-light.eot);
+	src: local("roboto light"),url(../fonts/roboto-light.ttf) format("ttf");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: roboto;
+	src: url(../fonts/roboto-regular.eot);
+	src: local("roboto regular"),url(../fonts/roboto-regular.ttf) format("ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: roboto;
+	src: url(../fonts/roboto-medium.eot);
+	src: local("roboto medium"),url(../fonts/roboto-medium.ttf) format("ttf");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: roboto;
+	src: url(../fonts/roboto-black.eot);
+	src: local("roboto black"),url(../fonts/roboto-black.ttf) format("ttf");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: roboto;
+	src: url(../fonts/roboto-bold.eot);
+	src: local("roboto bold"),url(../fonts/roboto-bold.ttf) format("ttf");
+	font-weight: 700;
+}
+
+
 
 :root {
 	--vz-body-bg: #f3f3f9;
@@ -207,7 +257,7 @@ File: Main Css File
 
 body {
 	background-color: #f6f6f6;
-	font-family: raleway;
+	font-family: roboto;
 }
 
 #page-topbar {
@@ -721,7 +771,7 @@ body {
 	padding: .625rem 1.5rem;
 	color: var(--vz-vertical-menu-item-color);
 	font-size: .9375rem;
-	font-family: raleway;
+	font-family: roboto;
 }
 
 .navbar-menu .navbar-nav .nav-link.active {
@@ -737,6 +787,7 @@ body {
 	min-width: 1.75rem;
 	font-size: 18px;
 	line-height: inherit;
+	margin-left: -10px;
 }
 
 .navbar-menu .navbar-nav .nav-link svg {
@@ -1245,7 +1296,7 @@ body {
 	position: relative;
 	width: calc(200px + 70px);
 	color: #fff;
-	background-color: var(--vz-vertical-menu-bg-dark);
+	background-color: #77765a;
 	-webkit-transition: none;
 	transition: none;
 }
@@ -1413,6 +1464,7 @@ body {
 [data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-link:hover {
 	color: #fff;
 	background-color: #77765a;
+	border-radius: 10px;
 }
 
 [data-layout=vertical][data-sidebar=dark] .navbar-nav .nav-link:hover .icon-dual {
@@ -8489,7 +8541,7 @@ a,button {
 	-webkit-box-align: start;
 	-ms-flex-align: start;
 	align-items: flex-start;
-	padding: 0.4rem 1rem;
+	padding: 0.4rem;
 }
 
 .simplebar-wrapper {
@@ -16355,4 +16407,60 @@ i.bx.bx-chevron-right {
 .gallery-wrapper.element-item.col-xxl-4.col-xl-4.col-sm-4 {
     padding-right: 5px;
     padding-left: 5px;
+}
+
+.image-gallery {
+	width: 32.7%;
+    display: inline-block;
+}
+
+.news-search {
+	padding: calc(32px / 2) 0;
+	width: 60%;
+	float: right;
+}
+
+.news-search span.search-widget-icon {
+    position: absolute;
+    z-index: 10;
+    font-size: 18px;
+    line-height: 38px;
+    right: 13px;
+    top: 0;
+    color: #77765a;
+}
+
+.news-search .form-control {
+	border-color: #77765a;
+	border-radius: 25px;
+}
+
+.news-search .form-control::placeholder {
+	color: #77765a;
+}
+
+.news-date {
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+.news-month {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.news-read-more {
+    text-transform: uppercase;
+    color: #77765a;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #77765a;
+    border-color: #77765a;
+}
+
+.page-link {
+	color: #77765a;
 }
