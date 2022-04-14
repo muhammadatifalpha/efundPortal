@@ -261,7 +261,9 @@ body {
 }
 
 #page-topbar {
-	position: fixed;
+	/* position: relative; */
+	position: relative;
+    width: 1173px;
 	top: 0;
 	right: 0;
 	left: 0;
@@ -742,7 +744,7 @@ body {
 
 .page-content {
 	/* padding: calc(70px + 1.5rem) calc(1.5rem / 2) 60px calc(1.5rem / 2); */
-	padding: calc(70px + 1.5rem) calc(1.5rem / 2) 0px calc(1.5rem / 2);
+	padding: calc(30px) calc(1.5rem / 2) 0px calc(1.5rem / 2);
 }
 
 .navbar-menu {
@@ -16164,7 +16166,7 @@ i.bx.bx-chevron-right {
 }
 
 .headlines {
-	width: 60%;
+	width: 80%;
 }
 
 .view {
@@ -16190,7 +16192,7 @@ i.bx.bx-chevron-right {
 
 .user {
 	border-radius: 50%;
-	width: 145px;
+	width: 100px;
 }
 
 .name {
@@ -16308,14 +16310,15 @@ i.bx.bx-chevron-right {
 }
 
 .event-date {
-    font-size: 32px;
+    font-size: 37px;
     margin-bottom: 0px;
+	text-align: center;
 }
 
 .event-month {
     text-transform: uppercase;
     margin-bottom: 0px;
-	font-size: 18px;
+	font-size: 17px;
 	text-align: center;
 	font-weight: bold;
 }
@@ -16466,5 +16469,30 @@ i.bx.bx-chevron-right {
 }
 
 .quicklinks-row {
-	padding-top: 2rem !important;
+	padding-top: 1.9rem !important;
+}
+
+.portfolio-item .item{
+	width: 33%;
+	float: left;
+	margin-bottom: 4px;
+}
+
+/*------------------------------ vertical bootstrap slider----------------------------*/
+
+.carousel-inner> .carousel-item.carousel-item-next ,
+.carousel-inner > .carousel-item.active.carousel-item-right{ 
+    transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0);  top: 0;
+    
+}
+.carousel-inner > .carousel-item.carousel-item-prev ,
+.carousel-inner > .carousel-item.active.carousel-item-left{ 
+    transform: translate3d(0,-100%, 0); -webkit-transform: translate3d(0,-100%, 0);  -moz-transform: translate3d(0,-100%, 0);-ms-transform: translate3d(0,-100%, 0); -o-transform: translate3d(0,-100%, 0); top: 0;
+    
+}
+.carousel-inner > .carousel-item.next.carousel-item-left ,
+.carousel-inner > .carousel-item.carousel-item-prev.carousel-item-right ,
+.carousel-inner > .carousel-item.active{
+    transform:translate3d(0,0,0); -webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);; -moz-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); top:0;
+    
 }

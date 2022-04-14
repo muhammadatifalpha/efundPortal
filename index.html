@@ -22,6 +22,8 @@
     <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
     <!-- Custom CSS-->
     <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <!-- Magnific Popup CSS-->
+    <link href="assets/libs/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
     
 
 </head>
@@ -30,7 +32,9 @@
 
     <!-- Begin page -->
     <div id="layout-wrapper">
-
+        <div class="banner">
+            <img src="assets/images/banner.jpg" class="img-fluid" alt="banner">
+        </div>
         <header id="page-topbar">
             <div class="layout-width">
                 <div class="navbar-header">
@@ -715,20 +719,20 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-6">
-                                            <div id="carouselExample" class="carousel slide" data-ride="carousel" data-bs-interval="false">
+                                            <div id="carouselA" class="carousel slide carouselBoth" data-bs-ride="carousel" data-bs-interval="false">
                                                 <div class="carousel-inner px-4 py-3">
                                                     <div class="row">
                                                         <h3 class="news">News</h3>
-                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselA" data-bs-slide="prev">
                                                             <i class='bx bx-chevron-left'></i>
                                                         </button>
-                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselA" data-bs-slide="next">
                                                             <i class='bx bx-chevron-right'></i>
                                                         </button>
                                                     </div>
                                                     <div class="carousel-item active">
                                                         <div class="row">
-                                                            <div class="col-12 mt-5">
+                                                            <div class="col-12 mt-4">
                                                                 <h4 class="headlines">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aenean ligula eget dolor.</h4>
                                                                 <p class="date pt-3">01 March 2022, Abu Dhabi</p>
                                                                 <div class="more mt-5">
@@ -741,7 +745,7 @@
                                                     </div>
                                                     <div class="carousel-item">
                                                         <div class="row">
-                                                            <div class="col-12 mt-5">
+                                                            <div class="col-12 mt-4">
                                                                 <h4 class="headlines">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aenean ligula eget dolor.</h4>
                                                                 <p class="date pt-3">01 March 2022, Abu Dhabi</p>
                                                                 <div class="more mt-5">
@@ -754,7 +758,7 @@
                                                     </div>
                                                     <div class="carousel-item">
                                                         <div class="row">
-                                                            <div class="col-12 mt-5">
+                                                            <div class="col-12 mt-4">
                                                                 <h4 class="headlines">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aenean ligula eget dolor.</h4>
                                                                 <p class="date pt-3">01 March 2022, Abu Dhabi</p>
                                                                 <div class="more mt-5">
@@ -769,7 +773,19 @@
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <img class="d-block img-fluid news-img" src="./assets/images/news/news_21_1.jpg" alt="First slide">
+                                            <div id="carouselB" class="carousel slide carouselBoth" data-bs-ride="carousel" data-bs-interval="false">
+                                                <div class="carousel-inner px-4 py-3">
+                                                    <div class="carousel-item active">
+                                                        <img class="d-block img-fluid news-img" src="assets/images/news/news.jpg" alt="First slide">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block img-fluid news-img" src="assets/images/news/news.jpg" alt="First slide">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block img-fluid news-img" src="assets/images/news/news.jpg" alt="First slide">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -909,6 +925,8 @@
                                                                 <img src="assets/images/icons/line-chart.png" class="quicklinks-icons">
                                                                 <p class="pt-4">Organization Chart</p>
                                                             </div>
+                                                        </div>
+                                                        <div class="row quicklinks-row">
                                                             <div class="col-6 text-center">
                                                                 <img src="assets/images/icons/school-material.png" class="quicklinks-icons">
                                                                 <p class="pt-4">HR Services</p>
@@ -917,6 +935,8 @@
                                                                 <img src="assets/images/icons/line-chart.png" class="quicklinks-icons">
                                                                 <p class="pt-4">Organization Chart</p>
                                                             </div>
+                                                        </div>
+                                                        <div class="row quicklinks-row">
                                                             <div class="col-6 text-center">
                                                                 <img src="assets/images/icons/school-material.png" class="quicklinks-icons">
                                                                 <p class="pt-4">HR Services</p>
@@ -1004,445 +1024,380 @@
                                                                 <i class='bx bx-chevron-right'></i>
                                                             </button>
                                                         </div>
-                                                        <div class="carousel-item active pb-3">
-                                                            <div class="gallery-wrapper ms-1">
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                        <div class="carousel-item active">
+                                                            <div class="portfolio-item">
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
                                                             </div>
+                                                            
                                                         </div>
-                                                        <div class="carousel-item pb-3">
-                                                            <div class="gallery-wrapper ms-1">
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                        <div class="carousel-item">
+                                                            <div class="portfolio-item">
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
-                                                                <div class="element-item image-gallery">
-                                                                    <div class="gallery-box">
-                                                                        <div class="gallery-container">
-                                                                            <a class="image-popup" href="assets/images/news/news-img.jpg" title="">
-                                                                                <img class="gallery-img img-fluid mx-auto" src="assets/images/news/news-img.jpg" alt="" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
                                                                 </div>
                                                             </div>
+                                                            
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <div class="portfolio-item">
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery pe-1">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item gallery">
+                                                                    <a href="assets/images/news/news-img.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                                                                    <img class="img-fluid" src="assets/images/news/news-img.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1455,11 +1410,26 @@
                     </div> 
 
                     <div class="row">
-                        <div class="col-xll-12">
+                        <div class="col-xxl-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="row">
-                                        
+                                    <div class="row px-4 py-3">
+                                        <h3>Emirate News</h3>
+                                    </div>
+                                    <div class="row px-4 py-1">
+                                        <div id="emiratenews" class="carousel slide vertical" data-bs-ride="carousel" data-bs-interval="3000">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aenean ligula eget dolor.</p>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aenean ligula eget dolor.</p>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aenean ligula eget dolor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1476,22 +1446,38 @@
 
     <!-- JAVASCRIPT -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
     <script src="assets/libs/feather-icons/feather.min.js"></script>
     <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
     <script src="assets/js/plugins.js"></script>
-
-    <!-- glightbox js -->
-    <script src="assets/libs/glightbox/js/glightbox.min.js"></script>
-
-    <!-- isotope-layout -->
-    <script src="assets/libs/isotope-layout/isotope.pkgd.min.js"></script>
-
-    <script src="assets/js/pages/gallery.init.js"></script>
-    
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+    <!-- Magnific Popup CSS-->
+    <script src="assets/libs/magnific-popup/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var popup_btn = $('.popup-btn');
+            popup_btn.magnificPopup({
+                type : 'image',
+                gallery : {
+         	        enabled : true
+                }
+            });
+        });
+    </script>
+
+    <script>
+        var carouselA = document.getElementById('carouselA')
+        var carouselB = document.getElementById('carouselB')
+
+        carouselA.addEventListener('slide.bs.carousel', function(e) {
+            var bsCarouselB = bootstrap.Carousel.getInstance(carouselB)
+            bsCarouselB.to(e.to)
+        })
+    </script>
     
 </body>
 
