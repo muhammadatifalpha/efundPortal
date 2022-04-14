@@ -16237,7 +16237,7 @@ i.bx.bx-chevron-right {
 
 .time {
 	color: #77765a;
-	font-size: 30px;
+	font-size: 28px;
 	margin-bottom: 0px;
 }
 
@@ -16308,7 +16308,7 @@ i.bx.bx-chevron-right {
 }
 
 .event-date {
-    font-size: 35px;
+    font-size: 32px;
     margin-bottom: 0px;
 }
 
@@ -16410,7 +16410,7 @@ i.bx.bx-chevron-right {
 }
 
 .image-gallery {
-	width: 32.7%;
+	width: 32%;
     display: inline-block;
 }
 
@@ -16463,4 +16463,8 @@ i.bx.bx-chevron-right {
 
 .page-link {
 	color: #77765a;
+}
+
+.quicklinks-row {
+	padding-top: 2rem !important;
 }
