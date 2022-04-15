@@ -16225,7 +16225,7 @@ i.bx.bx-chevron-right {
 
 .day {
 	color: #77765a;
-	font-size: 55px;
+	font-size: 45px;
 	margin-bottom: 0px;
 }
 
@@ -16349,6 +16349,14 @@ i.bx.bx-chevron-right {
 	margin-bottom: 0px;
 }
 
+.quick-links {
+	width: 80%;
+}
+
+.gallery {
+	width: 75%;
+}
+
 .gallery-img {
 	width: 200px;
 }
@@ -16417,7 +16425,7 @@ i.bx.bx-chevron-right {
 .portfolio-item .item{
 	width: 33%;
 	float: left;
-	margin-bottom: 4px;
+	/* margin-bottom: 4px; */
 }
 
 /*------------------------------ vertical bootstrap slider----------------------------*/
@@ -16492,7 +16500,7 @@ i.bx.bx-chevron-right {
 
 @media only screen and (min-width:1440px) and (max-width:1599px) {
 	.user {
-		width: 155px;
+		width: 150px;
 	}
 
 	.headlines {
@@ -16508,11 +16516,11 @@ i.bx.bx-chevron-right {
 	}
 
 	.quicklinks-row {
-		padding-top: 10px;
+		padding-top: 13px;
 	}
 
 	.quicklinks-row p {
-		margin-bottom: 0.65rem;
+		margin-bottom: 0.5rem;
 	}
 }
 
@@ -16522,7 +16530,7 @@ i.bx.bx-chevron-right {
 	}
 
 	.headlines {
-		width: 80%;
+		width: 100%;
 	}
 
 	.event-date {
