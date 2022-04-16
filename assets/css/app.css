@@ -16477,6 +16477,15 @@ i.bx.bx-chevron-right {
 		padding-top: 10px;
 		text-align: center;
 	}
+
+	.headlines-date {
+		padding-top: 16px;
+		margin-bottom: 0px;
+	}
+
+	.headlines-more {
+		padding-top: 30px;
+	}
 	
 }
 
@@ -16485,6 +16494,15 @@ i.bx.bx-chevron-right {
 	.events-desc {
 		padding-top: 10px;
 		text-align: center;
+	}
+
+	.headlines-date {
+		padding-top: 16px;
+		margin-bottom: 0px;
+	}
+
+	.headlines-more {
+		padding-top: 30px;
 	}
 	
 }
@@ -16495,16 +16513,34 @@ i.bx.bx-chevron-right {
 		padding-top: 10px;
 		text-align: center;
 	}
+
+	.headlines-date {
+		padding-top: 16px;
+		margin-bottom: 0px;
+	}
+
+	.headlines-more {
+		padding-top: 30px;
+	}
 	
 }
 
 @media only screen and (min-width:1440px) and (max-width:1599px) {
 	.user {
-		width: 150px;
+		width: 145px;
 	}
 
 	.headlines {
 		width: 100%;
+	}
+
+	.headlines-date {
+		padding-top: 16px;
+		margin-bottom: 0px;
+	}
+
+	.headlines-more {
+		padding-top: 30px;
 	}
 
 	.event-date {
@@ -16522,15 +16558,29 @@ i.bx.bx-chevron-right {
 	.quicklinks-row p {
 		margin-bottom: 0.5rem;
 	}
+
+	.gift-text {
+		padding: 15px 0;
+    	font-size: 23px;
+	}
 }
 
 @media only screen and (min-width:1600px) {
 	.user {
-		width: 155px;
+		width: 190px;
 	}
 
 	.headlines {
 		width: 100%;
+	}
+
+	.headlines-date {
+		padding-top: 20px;
+		margin-bottom: 0px;
+	}
+
+	.headlines-more {
+		padding-top: 60px;
 	}
 
 	.event-date {
@@ -16547,5 +16597,39 @@ i.bx.bx-chevron-right {
 
 	.quicklinks-row p {
 		margin-bottom: 0.65rem;
+	}
+
+	.name {
+		padding-top: 40px;
+		text-align: center;
+	}
+
+	.gift-icon {
+		width: 80px;
+		display: flex;
+		margin: 0 auto;
+	}
+
+	.gift-text {
+		padding: 20px 0;
+		font-size: 26px;
+	}
+
+	.day {
+		color: #77765a;
+		font-size: 70px;
+		margin-bottom: 0px;
+	}
+
+	.days {
+		color: #77765a;
+		font-size: 25px;
+		margin-bottom: 0px;
+	}
+
+	.time {
+		color: #77765a;
+		font-size: 37px;
+		margin-bottom: 0px;
 	}
 }
