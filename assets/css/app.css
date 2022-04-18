@@ -16161,6 +16161,7 @@ i.bx.bx-chevron-right {
 
 .news {
 	width: 80%;
+	font-weight: bold;
 }
 
 .view {
@@ -16223,6 +16224,10 @@ i.bx.bx-chevron-right {
 	padding-top: 25px;
 }
 
+.coming {
+	margin-bottom: 0.2rem;
+}
+
 .day {
 	color: #77765a;
 	font-size: 45px;
@@ -16241,18 +16246,9 @@ i.bx.bx-chevron-right {
 	margin-bottom: 0px;
 }
 
-.acc-date {
-	font-size: 35px;
-	margin-bottom: 0px;
-}
-
-.acc-mon {
-	text-transform: uppercase;
-	margin-bottom: 0px;
-}
-
-.border-left {
-	font-size: 50px;
+.upcoming-events {
+	width: 80%;
+    font-weight: bold;
 }
 
 .event-date {
@@ -16351,19 +16347,12 @@ i.bx.bx-chevron-right {
 
 .quick-links {
 	width: 80%;
+    font-weight: bold;
 }
 
 .gallery {
 	width: 75%;
-}
-
-.gallery-img {
-	width: 200px;
-}
-
-.gallery-wrapper.element-item.col-xxl-4.col-xl-4.col-sm-4 {
-    padding-right: 5px;
-    padding-left: 5px;
+	font-weight: bold;
 }
 
 .image-gallery {
@@ -16425,7 +16414,7 @@ i.bx.bx-chevron-right {
 .portfolio-item .item{
 	width: 33%;
 	float: left;
-	/* margin-bottom: 4px; */
+	margin-bottom: 4px;
 }
 
 /*------------------------------ vertical bootstrap slider----------------------------*/
@@ -16611,7 +16600,7 @@ i.bx.bx-chevron-right {
 	}
 
 	.gift-text {
-		padding: 20px 0;
+		padding: 18px 0;
 		font-size: 26px;
 	}
 
