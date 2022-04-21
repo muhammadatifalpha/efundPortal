@@ -67,19 +67,24 @@
             <div id="scrollbar">
                 <div class="container-fluid">
 
-                    <div id="two-column-menu">
-                    </div>
+                    <div id="two-column-menu"></div>
                     <ul class="navbar-nav" id="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link menu-link active" href="index.html">
                                 <i class="mdi mdi-view-dashboard"></i>
-                                <span data-key="t-dashboards">Dashboards</span>
+                                <span data-key="t-dashboards">Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="news.html">
                                 <i class="mdi mdi-newspaper-variant"></i>
                                 <span data-key="t-news">News</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="department.html">
+                                <i class="mdi mdi-office-building"></i>
+                                <span data-key="t-news">Department</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -119,6 +124,22 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="social-footer">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link social-links" href="#"><i class='bx bxl-instagram-alt'></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link social-links" href="#"><i class='bx bxl-twitter'></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link social-links" href="#"><i class='bx bxl-facebook'></i></a>
+                            </li>
+                          </ul>
+                          <div class="copyrights text-center">
+                            <p class="mb-0">© Copyrights. Abu Dhabi Pension Fund. All Rights Reserved</p>
+                          </div>
+                    </div>
                 </div>
                 <!-- Sidebar -->
             </div>
@@ -837,11 +858,11 @@
                                                                 </div>
                                                                 <div class="carousel-item">
                                                                     <div class="row pt-2">
-                                                                        <div class="col-2">
+                                                                        <div class="col-sm-12 col-md-12 col-lg-3">
                                                                             <p class="event-date">20</p>
                                                                             <div class="event-month">Aug</div>
                                                                         </div>
-                                                                        <div class="col-10 pt-4">
+                                                                        <div class="col-sm-12 col-md-12 col-lg-9 events-desc">
                                                                             <p class="event-headlines">Abu Dhabi Pension Fund Approves Its 2021 Plan</p>
                                                                             <p class="event-place">Abu Dhabi</p>
                                                                         </div>
@@ -849,11 +870,11 @@
                                                                 </div>
                                                                 <div class="carousel-item">
                                                                     <div class="row pt-2">
-                                                                        <div class="col-2">
+                                                                        <div class="col-sm-12 col-md-12 col-lg-3">
                                                                             <p class="event-date">20</p>
                                                                             <div class="event-month">Aug</div>
                                                                         </div>
-                                                                        <div class="col-10 pt-4">
+                                                                        <div class="col-sm-12 col-md-12 col-lg-9 events-desc">
                                                                             <p class="event-headlines">Abu Dhabi Pension Fund Approves Its 2021 Plan</p>
                                                                             <p class="event-place">Abu Dhabi</p>
                                                                         </div>
@@ -1242,7 +1263,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row px-4 py-3">
-                                        <h3>Emirate News</h3>
+                                        <h3 class="emirate-news">Emirate News</h3>
                                     </div>
                                     <div class="row px-4 py-1">
                                         <div id="emiratenews" class="carousel slide vertical" data-bs-ride="carousel" data-bs-interval="3000">

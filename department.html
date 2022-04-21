@@ -10,16 +10,21 @@
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!-- Glightbox CSS -->
+    <link rel="stylesheet" href="assets/libs/glightbox/css/glightbox.min.css">
     <!-- Layout config Js -->
     <script src="assets/js/layout.js"></script>
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Date Picker CSS-->
+    <link href="assets/libs/datepicker/datepickr.css" rel="stylesheet" type="text/css" />
     <!-- Icons CSS -->
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
     <!-- App CSS-->
     <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
     <!-- Custom CSS-->
     <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    
     
 
 </head>
@@ -63,8 +68,7 @@
             <div id="scrollbar">
                 <div class="container-fluid">
 
-                    <div id="two-column-menu">
-                    </div>
+                    <div id="two-column-menu"></div>
                     <ul class="navbar-nav" id="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="index.html">
@@ -73,13 +77,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link active" href="news.html">
+                            <a class="nav-link menu-link" href="news.html">
                                 <i class="mdi mdi-newspaper-variant"></i>
                                 <span data-key="t-news">News</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="department.html">
+                            <a class="nav-link menu-link active" href="department.html">
                                 <i class="mdi mdi-office-building"></i>
                                 <span data-key="t-news">Department</span>
                             </a>
@@ -729,35 +733,453 @@
                     </div>
                 </div>
             </header>
+            <div class="department-nav">
+                <ul class="nav ps-3">
+                    <li class="nav-item">
+                      <a class="nav-link department-link" href="#">Dashboard</a>
+                    </li>
+                    <div class="vl"></div>
+                    <li class="nav-item">
+                      <a class="nav-link department-link" href="#">Department</a>
+                    </li>
+                    <div class="vl"></div>
+                    <li class="nav-item">
+                      <a class="nav-link department-link" href="#">Policy & Procedures</a>
+                    </li>
+                    <div class="vl"></div>
+                    <li class="nav-item">
+                        <a class="nav-link department-link" href="#">Staff Directory</a>
+                    </li>
+                    <div class="vl"></div>
+                    <li class="nav-item">
+                        <a class="nav-link department-link" href="#">Document Library</a>
+                    </li>
+                    <div class="vl"></div>
+                    <li class="nav-item">
+                        <a class="nav-link department-link" href="#">Forum</a>
+                    </li>
+                    <div class="vl"></div>
+                    <li class="nav-item">
+                        <a class="nav-link department-link" href="#">FAQ's</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link department-link" href="#">Site Map</a>
+                    </li>
+                  </ul>
+            </div>
             <div class="page-content">
                 <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xxl-8">
+                            <div class="card department-msg-card">
+                                <div class="card-header">
+                                    <h4 class="text-white mb-0">Department Message</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4">
+                            <div class="card tip-card">
+                                <div class="card-header">
+                                    <h4 class="tip-heading mb-0">Tip of the day</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <p class="tip-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        <p class="tip-name mb-0">atif hanif</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-xxl-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="row py-2 px-4">
-                                        <div class="col-sm-12 col-md-9">
-                                            <h3 class="fw-bold mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <div id="carouselA" class="carousel slide carouselBoth" data-bs-ride="carousel" data-bs-interval="false">
+                                                <div class="carousel-inner px-2">
+                                                    <div class="row">
+                                                        <h3 class="news">Department News</h3>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselA" data-bs-slide="prev">
+                                                            <i class='bx bx-chevron-left'></i>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselA" data-bs-slide="next">
+                                                            <i class='bx bx-chevron-right'></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="carousel-item active">
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4">
+                                                                <h4 class="headlines">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</h4>
+                                                                <p class="headlines-date">01 March 2022, Abu Dhabi</p>
+                                                                <div class="headlines-more">
+                                                                    <p class="view"><i class="mdi mdi-eye"></i> 382</p>
+                                                                    <p class="like"><i class="mdi mdi-thumb-up"></i> 382</p>
+                                                                    <a class="read-more" href="news-detail.html">Read More</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4">
+                                                                <h4 class="headlines">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</h4>
+                                                                <p class="headlines-date">01 March 2022, Abu Dhabi</p>
+                                                                <div class="headlines-more">
+                                                                    <p class="view"><i class="mdi mdi-eye"></i> 382</p>
+                                                                    <p class="like"><i class="mdi mdi-thumb-up"></i> 382</p>
+                                                                    <a class="read-more" href="news-detail.html">Read More</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4">
+                                                                <h4 class="headlines">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</h4>
+                                                                <p class="headlines-date">01 March 2022, Abu Dhabi</p>
+                                                                <div class="headlines-more">
+                                                                    <p class="view"><i class="mdi mdi-eye"></i> 382</p>
+                                                                    <p class="like"><i class="mdi mdi-thumb-up"></i> 382</p>
+                                                                    <a class="read-more" href="news-detail.html">Read More</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-sm-12 col-md-3 my-auto">
-                                            <p class="fw-bold mb-0 float-md-end">16 March 2022</p>
+                                        <div class="col-sm-12 col-md-6">
+                                            <div id="carouselB" class="carousel slide carouselBoth" data-bs-ride="carousel" data-bs-interval="false">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="d-block img-fluid news-img" src="assets/images/news/news_21_1.jpg" alt="First slide">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block img-fluid news-img" src="assets/images/news/news_21_1.jpg" alt="First slide">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block img-fluid news-img" src="assets/images/news/news_21_1.jpg" alt="First slide">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row py-3 px-4">
-                                        <div class="col-sm-12">
-                                            <img src="assets/images/news/adpf.jpg" alt="news-img" class="img-fluid">
-                                            <p class="hightlight-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <p class="pt-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                            <i class='bx bxs-quote-left'></i>
-                                            <h4 class="text-center fw-bold w-50 d-block mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-                                            <p class="pt-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                            <p class="pt-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div class="video pt-4">
-                                                <iframe width="100%" height="600" src="https://www.youtube.com/embed/q5OrMwoXYys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xxl-4">
+                            <div class="card quick-links-card">
+                                <div class="card-header">
+                                    <h3 class="quick-links mb-0 text-white">Quick Links</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="col-1">
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#depquicklinks" data-bs-slide="prev">
+                                            <i class='bx bx-chevron-left'></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-10 d-block mx-auto">
+                                        <div id="depquicklinks" class="carousel slide depquicklinks" data-ride="carousel" data-bs-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="row quicklinks-row">
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/newspaper.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">News</p>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/survey.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Survey</p>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/inbox.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Inbox</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row quicklinks-row">
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/attendance.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Attendance</p>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/helpdesk.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Helpdesk</p>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/staff.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Staff</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row quicklinks-row">
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/school-material.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">News</p>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/line-chart.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Survey</p>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/line-chart.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Inbox</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row quicklinks-row">
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/school-material.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Attendance</p>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/line-chart.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Helpdesk</p>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/line-chart.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Staff</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row quicklinks-row">
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/school-material.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">News</p>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/line-chart.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Survey</p>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/line-chart.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Inbox</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row quicklinks-row">
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/school-material.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Attendance</p>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/line-chart.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Helpdesk</p>
+                                                        </div>
+                                                        <div class="col-4 text-center">
+                                                            <img src="assets/images/icons/line-chart.png" class="dept-links-icons">
+                                                            <p class="pt-2 text-white">Staff</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <p class="pt-4 text-center">Suspendisse vitae fermentum erat, in tincidunt elit. Vivamus bibendum tempor justo vitae varius. Nulla vel sodales ante. Aliquam sagittis sollicitudin dolor nec rhoncus. Mauris vulputate euismod euismod. Proin fermentum vulputate gravida.</p>
-                                            <p class="pt-2 text-center">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus venenatis commodo nisi, sit amet lobortis ligula aliquet ut. Etiam metus dolor, tristique non accumsan vel, mollis ut enim. Pellentesque eleifend porttitor sollicitudin. Donec ex diam, imperdiet vel risus non, bibendum accumsan odio. Phasellus tempus, ante nec blandit malesuada, neque nulla malesuada urna, quis pellentesque mi diam in quam.</p>
                                         </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button class="carousel-control-next" type="button" data-bs-target="#depquicklinks" data-bs-slide="next">
+                                            <i class='bx bx-chevron-right'></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-8">
+                            <div class="card dp-events-card">
+                                <div class="card-header">
+                                    <h3 class="department-events mb-0">Department Events</h3>
+                                    <a href="#" class="dp-view-all">View All</a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-5">
+                                            <div id="datepickr-calendar-6" data-datepickr data-draggable></div>
+                                        </div>
+                                        <div class="col-xl-7">
+                                            <div class="dep-event">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-12 col-lg-3">
+                                                        <p class="event-date">20</p>
+                                                        <div class="event-month">Aug</div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-lg-9 events-desc">
+                                                        <p class="event-headlines">Abu Dhabi Pension Fund Approves Its 2021 Plan</p>
+                                                        <p class="event-place">Abu Dhabi</p>
+                                                    </div>
+                                                </div>
+                                                <hr class="dep-hr">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-12 col-lg-3">
+                                                        <p class="event-date">20</p>
+                                                        <div class="event-month">Aug</div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-lg-9 events-desc">
+                                                        <p class="event-headlines">Abu Dhabi Pension Fund Approves Its 2021 Plan</p>
+                                                        <p class="event-place">Abu Dhabi</p>
+                                                    </div>
+                                                </div>
+                                                <hr class="dep-hr">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-12 col-lg-3">
+                                                        <p class="event-date">20</p>
+                                                        <div class="event-month">Aug</div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-lg-9 events-desc">
+                                                        <p class="event-headlines">Abu Dhabi Pension Fund Approves Its 2021 Plan</p>
+                                                        <p class="event-place">Abu Dhabi</p>
+                                                    </div>
+                                                </div>
+                                                <hr class="dep-hr">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-12 col-lg-3">
+                                                        <p class="event-date">20</p>
+                                                        <div class="event-month">Aug</div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-lg-9 events-desc">
+                                                        <p class="event-headlines">Abu Dhabi Pension Fund Approves Its 2021 Plan</p>
+                                                        <p class="event-place">Abu Dhabi</p>
+                                                    </div>
+                                                </div>
+                                                <hr class="dep-hr">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-12 col-lg-3">
+                                                        <p class="event-date">20</p>
+                                                        <div class="event-month">Aug</div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-12 col-lg-9 events-desc">
+                                                        <p class="event-headlines">Abu Dhabi Pension Fund Approves Its 2021 Plan</p>
+                                                        <p class="event-place">Abu Dhabi</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-xxl-12">
+                            <div class="card documents-card">
+                                <div class="card-header">
+                                    <h3 class="mb-0 doc-lib">Document Library</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="file-man-box">
+                                                <div class="file-img-box">
+                                                    <i class="mdi mdi-file-pdf-box"></i>
+                                                </div>
+                                                    <a href="#" class="file-download">
+                                                        <i class="mdi mdi-download"></i>
+                                                    </a>
+                                                <div class="file-man-title">
+                                                    <h5 class="mb-0 text-center">Document.pdf</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="file-man-box">
+                                                <div class="file-img-box">
+                                                    <i class="mdi mdi-file-word"></i>
+                                                </div>
+                                                <a href="#" class="file-download">
+                                                    <i class="mdi mdi-download"></i>
+                                                </a>
+                                                <div class="file-man-title">
+                                                    <h5 class="mb-0 text-center">Document.doc</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="file-man-box">
+                                                <div class="file-img-box">
+                                                    <i class="mdi mdi-file-excel"></i>
+                                                </div>
+                                                <a href="#" class="file-download">
+                                                    <i class="mdi mdi-download"></i>
+                                                </a>
+                                                <div class="file-man-title">
+                                                    <h5 class="mb-0 text-center">Document.xls</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="file-man-box">
+                                                <div class="file-img-box">
+                                                    <i class="mdi mdi-file-powerpoint"></i>
+                                                </div>
+                                                <a href="#" class="file-download">
+                                                    <i class="mdi mdi-download"></i>
+                                                </a>
+                                                <div class="file-man-title">
+                                                    <h5 class="mb-0 text-center">Document.pptx</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="file-man-box">
+                                                <div class="file-img-box">
+                                                    <i class="mdi mdi-file-excel"></i>
+                                                </div>
+                                                <a href="#" class="file-download">
+                                                    <i class="mdi mdi-download"></i>
+                                                </a>
+                                                <div class="file-man-title">
+                                                    <h5 class="mb-0 text-center">Document.xlsx</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="file-man-box">
+                                                <div class="file-img-box">
+                                                    <i class="mdi mdi-file-word"></i>
+                                                </div>
+                                                <a href="#" class="file-download">
+                                                    <i class="mdi mdi-download"></i>
+                                                </a>
+                                                <div class="file-man-title">
+                                                    <h5 class="mb-0 text-center">Document.docx</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
                                     </div>
                                 </div>
                             </div>
@@ -774,6 +1196,7 @@
 
     <!-- JAVASCRIPT -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
     <script src="assets/libs/feather-icons/feather.min.js"></script>
@@ -781,6 +1204,41 @@
     <script src="assets/js/plugins.js"></script>
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+    <!-- Magnific Popup CSS-->
+    <script src="assets/libs/datepicker/datepickr.js"></script>
+
+    <script>
+        var carouselA = document.getElementById('carouselA')
+        var carouselB = document.getElementById('carouselB')
+
+        carouselA.addEventListener('slide.bs.carousel', function(e) {
+            var bsCarouselB = bootstrap.Carousel.getInstance(carouselB)
+            bsCarouselB.to(e.to)
+        })
+    </script>
+
+    <script>
+        $("#datepickr-calendar-6").DatePickr({
+            onChange: function(){
+                console.log("Changed!");
+            },
+            onShow: function(){
+                console.log("Datepickr is being shown!");
+            },
+            onHide: function(){
+            console.log("Datepickr is being hidden!")
+            },
+            onMonthChange: function(e){
+            console.log("Month went one " + ((e.direction == -1) ? "backward": "forward"));
+            },
+        // datemin: new Date().addDays(6),
+        // datemax: new Date(),
+            position: "right",
+            draggable: true,
+            showDragNote: false,
+            dragKey: 17,
+        });
+  </script>
     
 </body>
 
